@@ -23,7 +23,7 @@ import { Component, HostListener, signal } from '@angular/core';
 
           <!-- CTA -->
           <div class="nav-cta">
-            <a href="https://aironicstudio.pl/kontakt" class="btn btn--primary btn--sm hide-mobile">
+            <a href="https://aironicstudio.pl/kontakt" class="btn btn--accent btn--sm hide-mobile">
               Bezpłatna konsultacja
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -48,17 +48,13 @@ import { Component, HostListener, signal } from '@angular/core';
       z-index: 1000;
       height: 68px;
       transition: all 0.3s ease;
-      background: rgba(12, 12, 20, 0.9);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--color-surface-border);
+      background: rgba(232, 228, 223, 0.97);
+      border-bottom: 1px solid rgba(0, 143, 120, .45);
     }
 
     .header.scrolled {
-      background: rgba(12, 12, 20, 0.94);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--color-surface-border);
+      background: rgba(232, 228, 223, 0.98);
+      border-bottom-color: rgba(0, 143, 120, .6);
     }
 
     .container { height: 100%; }
@@ -69,6 +65,9 @@ import { Component, HostListener, signal } from '@angular/core';
       justify-content: space-between;
       height: 100%;
       gap: var(--space-xl);
+      padding: 0 28px;
+      border-right: 1px solid rgba(0, 143, 120, .38);
+      border-left: 1px solid rgba(0, 143, 120, .38);
     }
 
     /* Logo */
@@ -80,10 +79,11 @@ import { Component, HostListener, signal } from '@angular/core';
       font-weight: 700;
       letter-spacing: -0.02em;
       flex-shrink: 0;
+      color: #12151a;
     }
     .logo-icon {
       font-size: 1.3rem;
-      filter: drop-shadow(0 0 8px var(--color-primary));
+      color: #12151a;
     }
     .logo-accent { color: var(--color-primary); }
 
@@ -95,14 +95,27 @@ import { Component, HostListener, signal } from '@angular/core';
       list-style: none;
     }
     .nav-links a {
-      font-size: 0.9rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.76rem;
       font-weight: 500;
-      color: var(--color-text-muted);
+      color: #4c5159;
+      letter-spacing: .02em;
       transition: color var(--transition-fast);
     }
     .nav-links a:hover,
     .nav-links a.active {
-      color: var(--color-text);
+      color: #12151a;
+    }
+
+    .nav-cta .btn {
+      border-radius: 0;
+      border: 1px solid #008f78;
+      box-shadow: none;
+      font-family: 'DM Mono', monospace;
+      font-size: .7rem;
+      letter-spacing: .015em;
+      text-transform: uppercase;
+      padding: 10px 14px;
     }
 
     /* CTA area */
@@ -124,8 +137,8 @@ import { Component, HostListener, signal } from '@angular/core';
       display: block;
       width: 22px;
       height: 2px;
-      background: var(--color-text);
-      border-radius: 2px;
+      background: #12151a;
+      border-radius: 0;
       transition: all 0.3s ease;
     }
     .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
@@ -136,7 +149,7 @@ import { Component, HostListener, signal } from '@angular/core';
     .backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.6);
+      background: rgba(18, 21, 26, .24);
       z-index: -1;
     }
 
@@ -146,8 +159,8 @@ import { Component, HostListener, signal } from '@angular/core';
         top: 68px; right: 0;
         width: 280px;
         height: calc(100vh - 68px);
-        background: var(--color-surface);
-        border-left: 1px solid var(--color-surface-border);
+        background: #e8e4df;
+        border-left: 1px solid rgba(0, 143, 120, .45);
         flex-direction: column;
         align-items: flex-start;
         padding: var(--space-xl);

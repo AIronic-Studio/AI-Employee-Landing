@@ -23,9 +23,8 @@ import { RouterLink } from '@angular/router';
     .sticky-bar {
       position: fixed;
       bottom: 0; left: 0; right: 0;
-      background: rgba(12, 12, 20, 0.95);
-      backdrop-filter: blur(20px);
-      border-top: 1px solid var(--color-surface-border);
+      background: #e8e4df;
+      border-top: 1px solid rgba(0, 143, 120, .55);
       padding: 12px 0;
       z-index: 900;
       transform: translateY(100%);
@@ -33,28 +32,53 @@ import { RouterLink } from '@angular/router';
     }
     .sticky-bar.visible { transform: translateY(0); }
 
+    .sticky-bar .container {
+      border-right: 1px solid rgba(0, 143, 120, .38);
+      border-left: 1px solid rgba(0, 143, 120, .38);
+    }
+
     .sticky-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: var(--space-lg);
+      padding: 0 28px;
     }
 
     .sticky-text {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 0.9rem;
-      color: var(--color-text-muted);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.76rem;
+      color: #4c5159;
     }
-    .sticky-text strong { color: var(--color-text); }
+    .sticky-text strong { color: #12151a; }
 
     .sticky-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--color-accent);
-      animation: pulse-glow 2s infinite;
+      width: 7px; height: 7px;
+      border-radius: 0;
+      background: #008f78;
       flex-shrink: 0;
+    }
+
+    .sticky-bar .btn {
+      border: 1px solid #008f78;
+      border-radius: 0;
+      background: var(--color-accent);
+      color: #12151a;
+      box-shadow: none;
+      font-family: 'DM Mono', monospace;
+      font-size: .7rem;
+      letter-spacing: .015em;
+      text-transform: uppercase;
+      transition: background-color .18s ease;
+    }
+
+    .sticky-bar .btn:hover {
+      background: #00d495;
+      box-shadow: none;
+      transform: none;
     }
 
     @media (max-width: 768px) {

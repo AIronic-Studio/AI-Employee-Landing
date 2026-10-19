@@ -58,16 +58,25 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .footer {
-      background: var(--color-dark);
-      border-top: 1px solid var(--color-surface-border);
+      background: #e8e4df;
+      color: #12151a;
+      border-top: 1px solid rgba(0, 143, 120, .55);
       padding: var(--space-3xl) 0 var(--space-xl);
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: var(--space-2xl);
+      gap: 0;
       margin-bottom: var(--space-2xl);
+      border-top: 1px solid rgba(0, 143, 120, .42);
+      border-left: 1px solid rgba(0, 143, 120, .42);
+    }
+
+    .footer-grid > div {
+      padding: 32px 26px;
+      border-right: 1px solid rgba(0, 143, 120, .42);
+      border-bottom: 1px solid rgba(0, 143, 120, .42);
     }
 
     .logo {
@@ -78,13 +87,15 @@ import { Component } from '@angular/core';
       font-weight: 700;
       letter-spacing: -0.02em;
       margin-bottom: var(--space-md);
+      color: #12151a;
+      text-decoration: none;
     }
     .logo-icon { font-size: 1.3rem; }
     .logo-accent { color: var(--color-primary); }
 
     .footer-tagline {
       font-size: 0.875rem;
-      color: var(--color-text-muted);
+      color: #4c5159;
       line-height: 1.65;
       max-width: 280px;
       margin-bottom: var(--space-lg);
@@ -92,34 +103,38 @@ import { Component } from '@angular/core';
 
 
     .footer-col h4 {
-      font-size: 0.8rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
       font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--color-text-dim);
+      color: #008f78;
       margin-bottom: var(--space-md);
     }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 10px; }
     .footer-col ul a {
       font-size: 0.9rem;
-      color: var(--color-text-muted);
+      color: #4c5159;
       transition: color var(--transition-fast);
     }
-    .footer-col ul a:hover { color: var(--color-text); }
-    .cta-link { color: var(--color-primary) !important; font-weight: 500; }
+    .footer-col ul a:hover { color: var(--color-primary); }
+    .cta-link { color: #008f78 !important; font-weight: 600; }
 
     .footer-bottom {
       display: flex;
       justify-content: space-between;
       padding-top: var(--space-lg);
-      border-top: 1px solid var(--color-surface-border);
+      border-top: 1px solid rgba(0, 143, 120, .42);
+      color: #758696;
+      font-family: 'DM Mono', monospace;
     }
+
+    .footer-bottom .text-muted { color: #758696; }
 
     @media (max-width: 768px) {
       .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: var(--space-xl);
       }
       .footer-brand { grid-column: 1 / -1; }
       .footer-bottom { flex-direction: column; gap: var(--space-sm); }
