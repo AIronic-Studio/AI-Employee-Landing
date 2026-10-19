@@ -48,10 +48,14 @@ import { Component, HostListener, signal } from '@angular/core';
       z-index: 1000;
       height: 68px;
       transition: all 0.3s ease;
+      background: rgba(12, 12, 20, 0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--color-surface-border);
     }
 
     .header.scrolled {
-      background: rgba(12, 12, 20, 0.88);
+      background: rgba(12, 12, 20, 0.94);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--color-surface-border);
