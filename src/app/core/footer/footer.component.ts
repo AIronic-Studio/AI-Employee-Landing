@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink],
   template: `
     <footer class="footer">
       <div class="container">
         <div class="footer-grid">
           <!-- Brand -->
           <div class="footer-brand">
-            <div class="logo">
+            <a class="logo" href="https://aironicstudio.pl/">
               <span class="logo-icon">⚡</span>
               <span class="logo-text">AIronic<span class="logo-accent">Studio</span></span>
-            </div>
+            </a>
             <p class="footer-tagline">Software szyty na miarę w rozsądnych pieniądzach. Aplikacje, panele, automatyzacje i integracje dla małych i średnich firm.</p>
           </div>
 
@@ -21,11 +19,11 @@ import { RouterLink } from '@angular/router';
           <div class="footer-col">
             <h4>Usługi</h4>
             <ul>
-              <li><a [routerLink]="['/']" fragment="oferta">Aplikacje i panele</a></li>
-              <li><a [routerLink]="['/']" fragment="oferta">Automatyzacje</a></li>
-              <li><a [routerLink]="['/']" fragment="oferta">Integracje systemów</a></li>
-              <li><a [routerLink]="['/']" fragment="oferta">AI w firmie</a></li>
-              <li><a [routerLink]="['/']" fragment="wycena">Wycena</a></li>
+              <li><a href="https://aironicstudio.pl/#oferta">Aplikacje i panele</a></li>
+              <li><a href="https://aironicstudio.pl/#oferta">Automatyzacje</a></li>
+              <li><a href="https://aironicstudio.pl/#oferta">Integracje systemów</a></li>
+              <li><a href="https://aironicstudio.pl/#oferta">AI w firmie</a></li>
+              <li><a href="https://aironicstudio.pl/#wycena">Wycena</a></li>
             </ul>
           </div>
 
@@ -33,11 +31,11 @@ import { RouterLink } from '@angular/router';
           <div class="footer-col">
             <h4>Firma</h4>
             <ul>
-              <li><a [routerLink]="['/']" fragment="o-nas">O nas</a></li>
-              <li><a [routerLink]="['/']" fragment="projekty">Projekty</a></li>
-              <li><a routerLink="/blog">Blog</a></li>
-              <li><a [routerLink]="['/']" fragment="faq">FAQ</a></li>
-              <li><a routerLink="/rodo">RODO</a></li>
+              <li><a href="https://aironicstudio.pl/#o-nas">O nas</a></li>
+              <li><a href="https://aironicstudio.pl/#projekty">Projekty</a></li>
+              <li><a href="https://aironicstudio.pl/blog">Blog</a></li>
+              <li><a href="https://aironicstudio.pl/#faq">FAQ</a></li>
+              <li><a href="https://aironicstudio.pl/rodo">RODO</a></li>
             </ul>
           </div>
 
@@ -46,7 +44,7 @@ import { RouterLink } from '@angular/router';
             <h4>Kontakt</h4>
             <ul>
               <li><a href="mailto:kontakt&#64;aironicstudio.pl">kontakt&#64;aironicstudio.pl</a></li>
-              <li><a routerLink="/kontakt" class="cta-link">→ Umów bezpłatną konsultację</a></li>
+              <li><a href="https://aironicstudio.pl/kontakt" class="cta-link">→ Umów bezpłatną konsultację</a></li>
             </ul>
           </div>
         </div>

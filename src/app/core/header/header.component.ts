@@ -1,31 +1,29 @@
 import { Component, HostListener, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive],
   template: `
     <header class="header" [class.scrolled]="scrolled()">
       <div class="container">
         <nav class="nav">
           <!-- Logo -->
-          <a routerLink="/" class="logo">
+          <a href="https://aironicstudio.pl/" class="logo">
             <span class="logo-icon">⚡</span>
             <span class="logo-text">AIronic<span class="logo-accent">Studio</span></span>
           </a>
 
           <!-- Desktop Nav -->
           <ul class="nav-links" [class.open]="mobileOpen()">
-            <li><a [routerLink]="['/']" fragment="oferta" (click)="mobileOpen.set(false)">Oferta</a></li>
-            <li><a [routerLink]="['/']" fragment="projekty" (click)="mobileOpen.set(false)">Projekty</a></li>
-            <li><a [routerLink]="['/']" fragment="wycena" (click)="mobileOpen.set(false)">Wycena</a></li>
-            <li><a [routerLink]="['/']" fragment="o-nas" (click)="mobileOpen.set(false)">O nas</a></li>
-            <li><a routerLink="/blog" routerLinkActive="active" (click)="mobileOpen.set(false)">Blog</a></li>
+            <li><a href="https://aironicstudio.pl/#oferta" (click)="mobileOpen.set(false)">Oferta</a></li>
+            <li><a href="https://aironicstudio.pl/#projekty" (click)="mobileOpen.set(false)">Projekty</a></li>
+            <li><a href="https://aironicstudio.pl/#wycena" (click)="mobileOpen.set(false)">Wycena</a></li>
+            <li><a href="https://aironicstudio.pl/#o-nas" (click)="mobileOpen.set(false)">O nas</a></li>
+            <li><a href="https://aironicstudio.pl/blog" (click)="mobileOpen.set(false)">Blog</a></li>
           </ul>
 
           <!-- CTA -->
           <div class="nav-cta">
-            <a routerLink="/kontakt" class="btn btn--primary btn--sm hide-mobile">
+            <a href="https://aironicstudio.pl/kontakt" class="btn btn--primary btn--sm hide-mobile">
               Bezpłatna konsultacja
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
