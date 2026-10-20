@@ -23,8 +23,9 @@ import { RouterLink } from '@angular/router';
     .sticky-bar {
       position: fixed;
       bottom: 0; left: 0; right: 0;
-      background: #e8e4df;
-      border-top: 1px solid rgba(0, 143, 120, .55);
+      background: rgba(255, 255, 255, .94);
+      border-top: 1px solid #e4e7dd;
+      box-shadow: 0 -8px 28px rgba(36, 69, 43, .08);
       padding: 12px 0;
       z-index: 900;
       transform: translateY(100%);
@@ -32,51 +33,46 @@ import { RouterLink } from '@angular/router';
     }
     .sticky-bar.visible { transform: translateY(0); }
 
-    .sticky-bar .container {
-      border-right: 1px solid rgba(0, 143, 120, .38);
-      border-left: 1px solid rgba(0, 143, 120, .38);
-    }
-
     .sticky-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: var(--space-lg);
-      padding: 0 28px;
+      padding: 0;
     }
 
     .sticky-text {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-family: 'DM Mono', monospace;
-      font-size: 0.76rem;
-      color: #4c5159;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: #5d6b62;
     }
-    .sticky-text strong { color: #12151a; }
+    .sticky-text strong { color: #1e2b26; }
 
     .sticky-dot {
-      width: 7px; height: 7px;
-      border-radius: 0;
-      background: #008f78;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #b9dc66;
       flex-shrink: 0;
     }
 
     .sticky-bar .btn {
-      border: 1px solid #008f78;
-      border-radius: 0;
-      background: var(--color-accent);
-      color: #12151a;
-      box-shadow: none;
-      font-family: 'DM Mono', monospace;
-      font-size: .7rem;
-      letter-spacing: .015em;
-      text-transform: uppercase;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      background: #19745a;
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(25, 116, 90, .2);
+      font-family: var(--font-sans);
+      font-size: .8rem;
+      letter-spacing: 0;
+      text-transform: none;
       transition: background-color .18s ease;
     }
 
     .sticky-bar .btn:hover {
-      background: #00d495;
+      background: #125540;
       box-shadow: none;
       transform: none;
     }

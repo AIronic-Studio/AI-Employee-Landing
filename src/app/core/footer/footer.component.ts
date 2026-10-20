@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
         <div class="footer-grid">
           <!-- Brand -->
           <div class="footer-brand">
-            <a class="logo" href="https://aironicstudio.pl/">
-              <span class="logo-icon">⚡</span>
-              <span class="logo-text">AIronic<span class="logo-accent">Studio</span></span>
+            <a class="logo" href="https://aironicstudio.pl/" aria-label="AI Employee by AIronic Studio">
+              <span class="logo-icon" aria-hidden="true">✳</span>
+              <span class="logo-copy"><span class="logo-title">AI Employee</span><span class="logo-byline">by AIronic Studio</span></span>
             </a>
             <p class="footer-tagline">Software szyty na miarę w rozsądnych pieniądzach. Aplikacje, panele, automatyzacje i integracje dla małych i średnich firm.</p>
           </div>
@@ -58,44 +58,36 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .footer {
-      background: #e8e4df;
-      color: #12151a;
-      border-top: 1px solid rgba(0, 143, 120, .55);
+      background: #f3f4ed;
+      color: #1e2b26;
+      border-top: 1px solid #e2e7dd;
       padding: var(--space-3xl) 0 var(--space-xl);
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 0;
+      gap: var(--space-2xl);
       margin-bottom: var(--space-2xl);
-      border-top: 1px solid rgba(0, 143, 120, .42);
-      border-left: 1px solid rgba(0, 143, 120, .42);
-    }
-
-    .footer-grid > div {
-      padding: 32px 26px;
-      border-right: 1px solid rgba(0, 143, 120, .42);
-      border-bottom: 1px solid rgba(0, 143, 120, .42);
+      border: 0;
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      gap: 10px;
       margin-bottom: var(--space-md);
-      color: #12151a;
+      color: #1e2b26;
       text-decoration: none;
     }
-    .logo-icon { font-size: 1.3rem; }
-    .logo-accent { color: var(--color-primary); }
+    .logo-icon { color: #19745a; font-size: 1.55rem; }
+    .logo-copy { display: flex; flex-direction: column; gap: 1px; }
+    .logo-title { font-size: .98rem; font-weight: 700; line-height: 1.05; letter-spacing: -.035em; }
+    .logo-byline { color: #6c786f; font-size: .62rem; font-weight: 500; line-height: 1.1; letter-spacing: .01em; }
 
     .footer-tagline {
       font-size: 0.875rem;
-      color: #4c5159;
+      color: #5d6b62;
       line-height: 1.65;
       max-width: 280px;
       margin-bottom: var(--space-lg);
@@ -103,34 +95,34 @@ import { Component } from '@angular/core';
 
 
     .footer-col h4 {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.7rem;
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #008f78;
+      color: #798479;
       margin-bottom: var(--space-md);
     }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 10px; }
     .footer-col ul a {
       font-size: 0.9rem;
-      color: #4c5159;
+      color: #5d6b62;
       transition: color var(--transition-fast);
     }
-    .footer-col ul a:hover { color: var(--color-primary); }
-    .cta-link { color: #008f78 !important; font-weight: 600; }
+    .footer-col ul a:hover { color: #19745a; }
+    .cta-link { color: #19745a !important; font-weight: 600; }
 
     .footer-bottom {
       display: flex;
       justify-content: space-between;
       padding-top: var(--space-lg);
-      border-top: 1px solid rgba(0, 143, 120, .42);
-      color: #758696;
-      font-family: 'DM Mono', monospace;
+      border-top: 1px solid #e0e5dc;
+      color: #748077;
+      font-family: var(--font-sans);
     }
 
-    .footer-bottom .text-muted { color: #758696; }
+    .footer-bottom .text-muted { color: #748077; }
 
     @media (max-width: 768px) {
       .footer-grid {

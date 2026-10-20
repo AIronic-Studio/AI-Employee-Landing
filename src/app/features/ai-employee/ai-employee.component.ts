@@ -6,7 +6,7 @@ import { SeoService } from '../../core/services/seo.service';
   selector: 'app-ai-employee',
   imports: [RouterLink],
   templateUrl: './ai-employee.component.html',
-  styleUrl: './ai-employee.component.css',
+  styleUrl: './ai-employee.craft.css',
 })
 export class AiEmployeeComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly seo = inject(SeoService);
@@ -15,8 +15,8 @@ export class AiEmployeeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.seo.setMetaTags({
-      title: 'AI Employee — Twój pracownik szyty na miarę',
-      description: 'Osobisty asystent AI, który pilnuje skrzynki i kalendarza, przygotowuje raporty i przejmuje powtarzalne zadania. Ty decydujesz, do czego ma dostęp.',
+      title: 'AI Employee — więcej czasu na to, co ważne',
+      description: 'Osobisty asystent AI, który pilnuje skrzynki i kalendarza, przygotowuje raporty i przejmuje powtarzalne zadania. Ty ustalasz zasady i zakres dostępu.',
       keywords: 'AI Employee, asystent AI, pracownik AI, automatyzacja zadań, asystent e-mail, raporty AI',
     });
   }
