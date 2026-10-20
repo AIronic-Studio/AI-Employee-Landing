@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-packages',
-  imports: [RouterLink],
   template: `
     <section class="section" id="wycena">
       <div class="container">
@@ -49,7 +47,7 @@ import { RouterLink } from '@angular/router';
             </ul>
             <div class="pricing-cta">
               <div class="price-tag free">Bezpłatny</div>
-              <a routerLink="/kontakt" class="btn btn--primary" style="width:100%; justify-content: center; margin-top: var(--space-lg)">
+              <a href="https://aironicstudio.pl/kontakt" class="btn btn--primary" style="width:100%; justify-content: center; margin-top: var(--space-lg)">
                 Umów bezpłatną konsultację →
               </a>
               <p class="pricing-note">Bez zobowiązań, bez karty kredytowej</p>
@@ -99,7 +97,7 @@ import { RouterLink } from '@angular/router';
           <p class="text-muted" style="font-size: 0.9rem; margin-bottom: var(--space-md)">
             Masz już pomysł albo konkretny problem do rozwiązania?
           </p>
-          <a routerLink="/kontakt" class="btn btn--accent">Umów konsultację i poznaj cenę →</a>
+          <a href="https://aironicstudio.pl/kontakt" class="btn btn--accent">Umów konsultację i poznaj cenę →</a>
         </div>
       </div>
     </section>

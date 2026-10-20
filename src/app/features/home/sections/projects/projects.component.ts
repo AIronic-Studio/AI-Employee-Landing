@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 interface Project {
   name: string;
@@ -15,7 +14,6 @@ interface Project {
 
 @Component({
   selector: 'app-projects',
-  imports: [RouterLink],
   template: `
     <section class="section" id="projekty">
       <div class="container">
@@ -59,7 +57,7 @@ interface Project {
                 }
               </div>
               @if (project.comingSoon) {
-                <a routerLink="/kontakt" class="btn btn--ghost project-cta">Chcę wiedzieć więcej →</a>
+                <a href="https://aironicstudio.pl/kontakt" class="btn btn--ghost project-cta">Chcę wiedzieć więcej →</a>
               } @else if (project.url) {
                 <a [href]="project.url" target="_blank" rel="noopener" class="btn btn--ghost project-cta">
                   Odwiedź {{ project.domain }} →

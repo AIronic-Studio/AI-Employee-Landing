@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-problems',
-  imports: [RouterLink],
   template: `
     <section class="section" id="problemy">
       <div class="container">
@@ -39,7 +37,7 @@ import { RouterLink } from '@angular/router';
           <p class="text-muted" style="margin-bottom: var(--space-lg)">
             Rozpoznajesz swoją firmę? Porozmawiajmy — pierwsza konsultacja jest bezpłatna.
           </p>
-          <a routerLink="/kontakt" class="btn btn--primary">
+          <a href="https://aironicstudio.pl/kontakt" class="btn btn--primary">
             Umów bezpłatną konsultację →
           </a>
         </div>

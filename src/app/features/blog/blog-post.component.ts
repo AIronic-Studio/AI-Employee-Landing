@@ -26,7 +26,7 @@ import { SeoService } from '../../core/services/seo.service';
           <div class="post-footer card" style="margin-top: var(--space-3xl)">
             <h3>Potrzebujesz oprogramowania szytego na miarę?</h3>
             <p>Zróbmy pierwszy krok wspólnie. Bezpłatna konsultacja pomoże Ci określić priorytety.</p>
-            <a routerLink="/kontakt" class="btn btn--primary" style="margin-top: var(--space-md)">Umów bezpłatną konsultację →</a>
+            <a href="https://aironicstudio.pl/kontakt" class="btn btn--primary" style="margin-top: var(--space-md)">Umów bezpłatną konsultację →</a>
           </div>
         </div>
       </article>

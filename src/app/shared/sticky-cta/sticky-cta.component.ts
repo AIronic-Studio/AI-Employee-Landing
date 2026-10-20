@@ -1,9 +1,7 @@
 import { Component, HostListener, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sticky-cta',
-  imports: [RouterLink],
   template: `
     <div class="sticky-bar" [class.visible]="visible()">
       <div class="container">
@@ -12,7 +10,7 @@ import { RouterLink } from '@angular/router';
             <span class="sticky-dot"></span>
             <strong>Software szyty na miarę</strong> w rozsądnych pieniądzach
           </p>
-          <a routerLink="/kontakt" class="btn btn--accent btn--sm">
+          <a href="https://aironicstudio.pl/kontakt" class="btn btn--accent btn--sm">
             Bezpłatna konsultacja →
           </a>
         </div>

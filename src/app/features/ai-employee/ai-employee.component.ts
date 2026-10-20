@@ -1,10 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-ai-employee',
-  imports: [RouterLink],
   templateUrl: './ai-employee.component.html',
   styleUrl: './ai-employee.craft.css',
 })
