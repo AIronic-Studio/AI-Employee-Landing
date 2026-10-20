@@ -15,7 +15,7 @@ export class AiEmployeeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.seo.setMetaTags({
-      title: 'AI Employee — więcej czasu na to, co ważne',
+      title: 'AI Employee — Twój pracownik szyty na miarę',
       description: 'Osobisty asystent AI, który pilnuje skrzynki i kalendarza, przygotowuje raporty i przejmuje powtarzalne zadania. Ty ustalasz zasady i zakres dostępu.',
       keywords: 'AI Employee, asystent AI, pracownik AI, automatyzacja zadań, asystent e-mail, raporty AI',
     });

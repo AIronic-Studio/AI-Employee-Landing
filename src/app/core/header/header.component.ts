@@ -51,12 +51,12 @@ import { Component, HostListener, signal } from '@angular/core';
       background: rgba(250, 249, 244, .92);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(30, 43, 38, .08);
+      border-bottom: 1px solid rgba(25, 43, 62, .09);
     }
 
     .header.scrolled {
       background: rgba(250, 249, 244, .98);
-      border-bottom-color: rgba(30, 43, 38, .12);
+      border-bottom-color: rgba(25, 43, 62, .12);
     }
 
     .container { height: 100%; }
@@ -76,15 +76,15 @@ import { Component, HostListener, signal } from '@angular/core';
       align-items: center;
       gap: 10px;
       flex-shrink: 0;
-      color: #1e2b26;
+      color: #192b3e;
     }
     .logo-icon {
-      color: #19745a;
+      color: #0B5FC3;
       font-size: 1.55rem;
     }
     .logo-copy { display: flex; flex-direction: column; gap: 1px; }
     .logo-title { font-size: .98rem; font-weight: 700; line-height: 1.05; letter-spacing: -.035em; }
-    .logo-byline { color: #6c786f; font-size: .62rem; font-weight: 500; line-height: 1.1; letter-spacing: .01em; }
+    .logo-byline { color: #687789; font-size: .62rem; font-weight: 500; line-height: 1.1; letter-spacing: .01em; }
 
     /* Nav links */
     .nav-links {
@@ -97,28 +97,28 @@ import { Component, HostListener, signal } from '@angular/core';
       font-family: var(--font-sans);
       font-size: 0.84rem;
       font-weight: 500;
-      color: #5d6b62;
+      color: #596c83;
       letter-spacing: 0;
       transition: color var(--transition-fast);
     }
     .nav-links a:hover,
     .nav-links a.active {
-      color: #19745a;
+      color: #0B5FC3;
     }
 
     .nav-cta .btn {
       border-radius: 12px;
       border: 1px solid transparent;
-      background: #19745a;
+      background: #0B5FC3;
       color: #fff;
-      box-shadow: 0 6px 18px rgba(25, 116, 90, .2);
+      box-shadow: 0 6px 18px rgba(11, 95, 195, .18);
       font-family: var(--font-sans);
       font-size: .8rem;
       letter-spacing: 0;
       text-transform: none;
       padding: 10px 16px;
     }
-    .nav-cta .btn:hover { background: #125540; }
+    .nav-cta .btn:hover { background: #084A98; }
 
     /* CTA area */
     .nav-cta {
@@ -139,7 +139,7 @@ import { Component, HostListener, signal } from '@angular/core';
       display: block;
       width: 22px;
       height: 2px;
-      background: #1e2b26;
+      background: #192b3e;
       border-radius: 2px;
       transition: all 0.3s ease;
     }
@@ -151,7 +151,7 @@ import { Component, HostListener, signal } from '@angular/core';
     .backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(30, 43, 38, .18);
+      background: rgba(25, 43, 62, .18);
       z-index: -1;
     }
 
@@ -162,7 +162,7 @@ import { Component, HostListener, signal } from '@angular/core';
         width: 280px;
         height: calc(100vh - 68px);
         background: #faf9f4;
-        border-left: 1px solid rgba(30, 43, 38, .12);
+        border-left: 1px solid rgba(25, 43, 62, .12);
         flex-direction: column;
         align-items: flex-start;
         padding: var(--space-xl);

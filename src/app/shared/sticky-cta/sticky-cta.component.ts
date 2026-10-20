@@ -24,8 +24,8 @@ import { RouterLink } from '@angular/router';
       position: fixed;
       bottom: 0; left: 0; right: 0;
       background: rgba(255, 255, 255, .94);
-      border-top: 1px solid #e4e7dd;
-      box-shadow: 0 -8px 28px rgba(36, 69, 43, .08);
+      border-top: 1px solid #e0e6ed;
+      box-shadow: 0 -8px 28px rgba(25, 61, 105, .08);
       padding: 12px 0;
       z-index: 900;
       transform: translateY(100%);
@@ -47,9 +47,9 @@ import { RouterLink } from '@angular/router';
       gap: 10px;
       font-family: var(--font-sans);
       font-size: 0.85rem;
-      color: #5d6b62;
+      color: #596c83;
     }
-    .sticky-text strong { color: #1e2b26; }
+    .sticky-text strong { color: #192b3e; }
 
     .sticky-dot {
       width: 8px; height: 8px;
@@ -61,9 +61,9 @@ import { RouterLink } from '@angular/router';
     .sticky-bar .btn {
       border: 1px solid transparent;
       border-radius: 12px;
-      background: #19745a;
+      background: #0B5FC3;
       color: #fff;
-      box-shadow: 0 6px 18px rgba(25, 116, 90, .2);
+      box-shadow: 0 6px 18px rgba(11, 95, 195, .18);
       font-family: var(--font-sans);
       font-size: .8rem;
       letter-spacing: 0;
@@ -72,7 +72,7 @@ import { RouterLink } from '@angular/router';
     }
 
     .sticky-bar .btn:hover {
-      background: #125540;
+      background: #084A98;
       box-shadow: none;
       transform: none;
     }

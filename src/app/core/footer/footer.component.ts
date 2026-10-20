@@ -58,9 +58,9 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .footer {
-      background: #f3f4ed;
-      color: #1e2b26;
-      border-top: 1px solid #e2e7dd;
+      background: #f1f4f8;
+      color: #192b3e;
+      border-top: 1px solid #e0e6ed;
       padding: var(--space-3xl) 0 var(--space-xl);
     }
 
@@ -77,17 +77,17 @@ import { Component } from '@angular/core';
       align-items: center;
       gap: 10px;
       margin-bottom: var(--space-md);
-      color: #1e2b26;
+      color: #192b3e;
       text-decoration: none;
     }
-    .logo-icon { color: #19745a; font-size: 1.55rem; }
+    .logo-icon { color: #0B5FC3; font-size: 1.55rem; }
     .logo-copy { display: flex; flex-direction: column; gap: 1px; }
     .logo-title { font-size: .98rem; font-weight: 700; line-height: 1.05; letter-spacing: -.035em; }
-    .logo-byline { color: #6c786f; font-size: .62rem; font-weight: 500; line-height: 1.1; letter-spacing: .01em; }
+    .logo-byline { color: #687789; font-size: .62rem; font-weight: 500; line-height: 1.1; letter-spacing: .01em; }
 
     .footer-tagline {
       font-size: 0.875rem;
-      color: #5d6b62;
+      color: #596c83;
       line-height: 1.65;
       max-width: 280px;
       margin-bottom: var(--space-lg);
@@ -100,29 +100,29 @@ import { Component } from '@angular/core';
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #798479;
+      color: #77869a;
       margin-bottom: var(--space-md);
     }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 10px; }
     .footer-col ul a {
       font-size: 0.9rem;
-      color: #5d6b62;
+      color: #596c83;
       transition: color var(--transition-fast);
     }
-    .footer-col ul a:hover { color: #19745a; }
-    .cta-link { color: #19745a !important; font-weight: 600; }
+    .footer-col ul a:hover { color: #0B5FC3; }
+    .cta-link { color: #0B5FC3 !important; font-weight: 600; }
 
     .footer-bottom {
       display: flex;
       justify-content: space-between;
       padding-top: var(--space-lg);
-      border-top: 1px solid #e0e5dc;
-      color: #748077;
+      border-top: 1px solid #e0e6ed;
+      color: #718095;
       font-family: var(--font-sans);
     }
 
-    .footer-bottom .text-muted { color: #748077; }
+    .footer-bottom .text-muted { color: #718095; }
 
     @media (max-width: 768px) {
       .footer-grid {
